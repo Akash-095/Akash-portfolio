@@ -1,6 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import '../../Styles/About.css';
+@import '../../Styles/Home.css';
+@import '../../Styles/Projects.css';
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -15,13 +19,18 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@font-face {
+  font-family: "Tungsten-Bold";
+  src: url("https://db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.eot");
+  src: url("https://db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.svg#Tungsten-Bold")format("svg");
 }
+
+body{
+  overflow-x: hidden;
+  background-color: #ece8e1;
+}
+

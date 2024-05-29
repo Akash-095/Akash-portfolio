@@ -1,0 +1,36 @@
+
+.About-section{
+    margin: 2rem 2rem;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow: visible;
+
+}
+
+.About-Image{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    right: -12rem;
+    
+}
+.ABout-Image img{
+    display: block;
+}
+
+.About-details{
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    width: 30%;
+    margin-left: 10rem;
+}
+.About-title{
+    text-transform: uppercase;
+    font-family: 'Tungsten-Bold';
+    font-size: 8.5rem;
+    color: #0f1923;
+}

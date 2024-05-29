@@ -1,0 +1,96 @@
+.projectSection{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.p-header{
+    line-height: .86;
+    
+}
+h2 span{
+    font-size: 6rem;
+    /* font-weight: 400; */
+    color: #ff4655;
+    text-transform: uppercase;
+    font-family: "Tungsten-Bold";
+   
+    
+    
+   
+}
+.title-down{
+    transform: translateY(23%);
+    position: relative;
+    z-index: 2;
+}
+h2{
+    font-weight: 400;
+   
+
+}
+.CardCont{
+display: flex;
+flex-direction: row;
+margin: auto;
+justify-content: space-between;
+gap: 3rem;
+}
+
+
+
+
+/* -----------------ProjectCard---------------- */
+.Card{
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    gap: 0.5rem;
+    /* border: 1px solid blue; */
+   
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+}
+.Card h3{
+font-size: 1.5rem;
+}
+.imgs img{
+    height: 200px;
+  
+}
+.Tech{
+    color: #ff4655;
+    font-weight: 400;
+    font-size: 1rem;
+}
+.card-desc{
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    color: #383e3a;
+    font-weight: 700;
+}
+
+
+ .Card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -500px;
+    width: 120%;
+    height: 200px;
+    background:#ff4655;
+    mix-blend-mode: multiply;
+    transition: 0.3s;
+    pointer-events: none;
+    z-index: 1;
+    transform: skewX(-10deg);
+   
+  }
+
+ .Card:hover::before {
+    left: -10%;
+    /* right: 0px; */
+    
+  }
+ 
